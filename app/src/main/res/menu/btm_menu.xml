@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--
+        showAsAction : 보이는 설정
+        always : 항상 보여주게 처리
+        never : 안보이게 처리
+        ifRoom :  공간이 있을 때 표시
+    -->
+
+    <item
+    android:id="@+id/menu1"
+    android:title=""
+    android:icon="@drawable/ic_outline_home_24"
+    app:showAsAction="ifRoom"
+    android:enabled="true"
+    /><item
+    android:id="@+id/menu2"
+    android:title=""
+    android:icon="@drawable/ic_outline_search_24"
+    app:showAsAction="ifRoom"
+
+    /><item
+    android:id="@+id/menu3"
+    android:title=""
+    android:icon="@drawable/ic_baseline_ondemand_video_24"
+    app:showAsAction="ifRoom"
+
+    /><item
+    android:id="@+id/menu4"
+    android:title=""
+    android:icon="@drawable/ic_outline_shopping_bag_24"
+    app:showAsAction="ifRoom"
+
+    /><item
+    android:id="@+id/menu5"
+    android:title=""
+    android:icon="@drawable/ic_outline_person_outline_24"
+    app:showAsAction="ifRoom"
+
+    />
+
+</menu>

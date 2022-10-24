@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="392dp"
+    android:layout_height="510dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/lil"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/search1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/heart"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_baseline_favorite_border_24" />
+
+        <TextView
+            android:id="@+id/text_heart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="1.6만"
+            android:textColor="#000000" />
+
+        <ImageView
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_outline_chat_bubbleblack24" />
+
+        <TextView
+            android:id="@+id/chat_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="2300개"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/dm" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_outline_bookmark_blaborder_24" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_more_horiz_24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="352dp"
+        android:layout_height="53dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="33dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/lil_proimg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/pro" />
+
+        <TextView
+            android:id="@+id/lil_id"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="아이디"
+            android:textColor="#0E0E0E" />
+
+        <Button
+            android:id="@+id/btn_lil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="팔로우"
+            android:textColor="#000000"
+            android:textSize="12dp" />
+
+
+    </LinearLayout>
+</RelativeLayout>

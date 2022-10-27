@@ -6,10 +6,10 @@
     android:orientation="vertical">
 
     <ImageView
-        android:scaleType="fitXY"
         android:id="@+id/lil"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:scaleType="fitXY"
         android:src="@drawable/search1" />
 
     <LinearLayout
@@ -88,32 +88,79 @@
         android:layout_marginBottom="33dp"
         android:orientation="horizontal">
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/lil_proimg"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginRight="10dp"
-            android:src="@drawable/pro" />
 
-        <TextView
-            android:id="@+id/lil_id"
-            android:layout_width="167dp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
-            android:text="아이디"
-            android:textColor="#0E0E0E" />
+        <LinearLayout
+            android:layout_width="281dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/btn_lil"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/white"
-            android:minWidth="0dp"
-            android:minHeight="0dp"
-            android:text="팔로우"
-            android:textColor="#000000"
-            android:textSize="12dp" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/lil_proimg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/pro" />
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+
+                   <LinearLayout
+                       android:orientation="vertical"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+                       <TextView
+                           android:textStyle="bold"
+                           android:id="@+id/lil_id"
+                           android:layout_width="119dp"
+                           android:layout_height="wrap_content"
+                           android:layout_marginRight="10dp"
+                           android:text="아이디"
+                           android:textColor="#0E0E0E" />
+                       <TextView
+                           android:textSize="12dp"
+                           android:id="@+id/lil_content"
+                           android:layout_width="119dp"
+                           android:layout_height="wrap_content"
+                           android:layout_marginRight="10dp"
+                           android:text="컨텐츠 내용"
+                           android:textColor="#0E0E0E" />
+                   </LinearLayout>
+
+                   <Button
+                       android:id="@+id/btn_lil"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:backgroundTint="@color/white"
+                       android:minWidth="0dp"
+                       android:minHeight="0dp"
+                       android:text="팔로우"
+                       android:textColor="#000000"
+                       android:textSize="12dp" />
+               </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/lil_music"
+        android:layout_width="354dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="7dp"
+        android:drawableLeft="@drawable/ic_baseline_music_note_24"
+        android:text="음악 "
+        android:textColor="#0E0E0E" />
 </RelativeLayout>

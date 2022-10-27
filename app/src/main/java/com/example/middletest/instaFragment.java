@@ -2,16 +2,14 @@ package com.example.middletest;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
-import java.nio.file.Files;
 import java.util.ArrayList;
 
 
@@ -48,11 +46,11 @@ public class instaFragment extends Fragment {
         story_view.setLayoutManager(smanager);
 
         ArrayList<InstaDTO> list2 = new ArrayList<>();
-        list2.add(new InstaDTO(R.drawable.potato,R.drawable.potato,R.drawable.pro,"2002potato",
-                "2002potato","강원도","감자좋아"));
+        list2.add(new InstaDTO(R.drawable.potato,R.drawable.potato,R.drawable.pro,30,
+                "2002potato","2002potato","강원도","감자"));
 
-        list2.add(new InstaDTO(R.drawable.search9,R.drawable.search2,R.drawable.pro,"Seungjiin_",
-                "Seungjiin_","광주","몰라 ㅗ"));
+        list2.add(new InstaDTO(R.drawable.search9,R.drawable.search2,R.drawable.pro,60,
+                "Seungjiin_","Seungjiin_","광주","이이이이잉"));
 
 
 

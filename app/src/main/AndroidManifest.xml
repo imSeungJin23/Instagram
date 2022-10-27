@@ -5,19 +5,19 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-    android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:icon="@drawable/images2"
         android:label="Instagram"
         android:roundIcon="@drawable/images2"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MiddleTest">
+        android:theme="@style/Theme.MiddleTest"
+        android:usesCleartextTraffic="true">
         <meta-data
             android:name="com.google.android.actions"
             android:resource="@xml/actions" />
 
         <activity
-            android:name=".insta_item"
+            android:name=".StoryIn"
             android:exported="true" />
         <activity
             android:name=".SplashActivity"

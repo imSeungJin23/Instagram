@@ -1,6 +1,7 @@
 package com.example.middletest;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -39,6 +40,18 @@ public class storyAdapter extends RecyclerView.Adapter<storyAdapter.ViewHolder> 
         v.story_img.setImageResource(list.get(i).getStory_img());
         v.story_id.setText(list.get(i).getStory_id());
 
+
+        v.story_img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               Intent intent = new Intent(context,StoryIn.class);
+                context.startActivity(intent);
+            }
+        });
+
+
+
+
     }
 
     @Override
@@ -47,7 +60,7 @@ public class storyAdapter extends RecyclerView.Adapter<storyAdapter.ViewHolder> 
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
-        ImageView story_img;
+        ImageView story_img ,storyIn_exit;
         TextView story_id;
 
 
@@ -55,6 +68,7 @@ public class storyAdapter extends RecyclerView.Adapter<storyAdapter.ViewHolder> 
             super(v);
             story_img = v.findViewById(R.id.story_img);
             story_id = v.findViewById(R.id.story_id);
+            storyIn_exit = v.findViewById(R.id.storyIn_exit);
         }
     }
 

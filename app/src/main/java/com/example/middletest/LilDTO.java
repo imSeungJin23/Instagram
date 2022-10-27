@@ -8,14 +8,16 @@ public class LilDTO {
 
 
     private int lil_proimg ;
-    private String lil_id, text_heart ,chat_num, lil;
+    private String lil_id, text_heart ,chat_num, lil, lil_music,Lil_content;
 
-    public LilDTO(int lil_proimg, String lil_id, String text_heart, String chat_num, String lil) {
+    public LilDTO(int lil_proimg, String lil_id, String text_heart, String chat_num, String lil, String lil_music, String lil_content) {
         this.lil_proimg = lil_proimg;
         this.lil_id = lil_id;
         this.text_heart = text_heart;
         this.chat_num = chat_num;
         this.lil = lil;
+        this.lil_music = lil_music;
+        Lil_content = lil_content;
     }
 
     public int getLil_proimg() {
@@ -56,5 +58,21 @@ public class LilDTO {
 
     public void setLil(String lil) {
         this.lil = lil;
+    }
+
+    public String getLil_music() {
+        return lil_music;
+    }
+
+    public void setLil_music(String lil_music) {
+        this.lil_music = lil_music;
+    }
+
+    public String getLil_content() {
+        return Lil_content;
+    }
+
+    public void setLil_content(String lil_content) {
+        Lil_content = lil_content;
     }
 }

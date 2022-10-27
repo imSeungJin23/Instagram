@@ -29,13 +29,16 @@ public class LilFragment extends Fragment {
 
         ArrayList<LilDTO> list = new ArrayList<>();
         list.add(new LilDTO(R.drawable.pro,"2002potato","2.3만","1000개",
-                "https://blog.kakaocdn.net/dn/c6pAkf/btrn4rgw5la/7m06GPUMq1155ou7EEYo21/img.gif"));
+                "https://blog.kakaocdn.net/dn/c6pAkf/btrn4rgw5la/7m06GPUMq1155ou7EEYo21/img.gif","2002potato- 원본 오디오","고양이 슈우욱"));
         list.add(new LilDTO(R.drawable.search10,"seunjiin_","1.3만","200개",
-                "https://cdn.vox-cdn.com/thumbor/He_VVk5IhW5UI0w8RciuhRgIfjc=/0x15:500x348/1400x1400/filters:focal(0x15:500x348):format(gif)/cdn.vox-cdn.com/uploads/chorus_image/image/36992002/tumblr_lmwsamrrxT1qagx30.0.0.gif"));
+                "https://cdn.vox-cdn.com/thumbor/He_VVk5IhW5UI0w8RciuhRgIfjc=/0x15:500x348/1400x1400/filters:focal(0x15:500x348):" +
+                        "format(gif)/cdn.vox-cdn.com/uploads/chorus_image/image/36992002/tumblr_lmwsamrrxT1qagx30.0.0.gif",
+                "lolesports - 롤 이스포츠","피카츄우우"));
         list.add(new LilDTO(R.drawable.search2,"izky","3.3만","1300개",
-                "https://thumbs.gfycat.com/ExcitableDigitalHoverfly-size_restricted.gif"));
+                "https://thumbs.gfycat.com/ExcitableDigitalHoverfly-size_restricted.gif","seungjiin_- 원본 오디오","피카피카"));
         list.add(new LilDTO(R.drawable.shop2,"kiteman","4.3만","51000개",
-                "https://learn.g2.com/hs-fs/hubfs/plan%20gif%20marketing%20strategy.gif?width=500&name=plan%20gif%20marketing%20strategy.gif"));
+                "https://learn.g2.com/hs-fs/hubfs/plan%20gif%20marketing%20strategy.gif?width=500&name=plan%20gif%20marketing%20strategy.gif",
+                "inkeok- 원본 오디오","뚱이뚱이뚱이뚜이뚜이"));
 
 
 

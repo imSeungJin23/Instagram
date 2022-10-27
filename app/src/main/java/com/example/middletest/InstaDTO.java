@@ -1,13 +1,14 @@
 package com.example.middletest;
 
 public class InstaDTO {
-    private int pro_img , content_img ,repl_my_img ;
+    private int pro_img , content_img ,repl_my_img, favorNum;
     private String nick_name,nickname2, location,content_text;
 
-    public InstaDTO(int pro_img, int content_img, int repl_my_img, String nick_name, String nickname2, String location, String content_text) {
+    public InstaDTO(int pro_img, int content_img, int repl_my_img, int favorNum, String nick_name, String nickname2, String location, String content_text) {
         this.pro_img = pro_img;
         this.content_img = content_img;
         this.repl_my_img = repl_my_img;
+        this.favorNum = favorNum;
         this.nick_name = nick_name;
         this.nickname2 = nickname2;
         this.location = location;
@@ -36,6 +37,14 @@ public class InstaDTO {
 
     public void setRepl_my_img(int repl_my_img) {
         this.repl_my_img = repl_my_img;
+    }
+
+    public int getFavorNum() {
+        return favorNum;
+    }
+
+    public void setFavorNum(int favorNum) {
+        this.favorNum = favorNum;
     }
 
     public String getNick_name() {

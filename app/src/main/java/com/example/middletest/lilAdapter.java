@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -42,7 +43,16 @@ public class lilAdapter extends RecyclerView.Adapter<lilAdapter.ViewHolder>{
         h.lil_id.setText(list.get(i).getLil_id());
         h.text_heart.setText(list.get(i).getText_heart());
         h.chat_num.setText(list.get(i).getChat_num());
+        h.lil_music.setText(list.get(i).getLil_music());
+        h.lil_content.setText(list.get(i).getLil_content());
 
+        h.btn_lil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                h.btn_lil.setText("팔로잉");
+
+            }
+        });
     }
 
 
@@ -52,8 +62,9 @@ public class lilAdapter extends RecyclerView.Adapter<lilAdapter.ViewHolder>{
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
+        Button btn_lil;
         ImageView lil,lil_proimg;
-        TextView lil_id,text_heart,chat_num;
+        TextView lil_id,text_heart,chat_num, lil_music,lil_content;
         public ViewHolder(@NonNull View v) {
             super(v);
         lil = v.findViewById(R.id.lil);
@@ -61,6 +72,9 @@ public class lilAdapter extends RecyclerView.Adapter<lilAdapter.ViewHolder>{
         lil_proimg = v.findViewById(R.id.lil_proimg);
             text_heart = v.findViewById(R.id.text_heart);
             chat_num = v.findViewById(R.id.chat_num);
+            lil_music = v.findViewById(R.id.lil_music);
+            lil_content = v.findViewById(R.id.lil_content);
+            btn_lil = v.findViewById(R.id.btn_lil);
 
 
 

@@ -3,13 +3,11 @@ package com.example.middletest;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.ImageView;
 
-import com.bumptech.glide.Glide;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
@@ -24,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
         actionBar = getSupportActionBar();
         getSupportFragmentManager().beginTransaction().replace(R.id.container,new instaFragment()).commit();
 
-        img1 =findViewById(R.id.gif1);
         btm_nav = findViewById(R.id.btm_nav);
         btm_nav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -38,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
                 }else if(item.getItemId() == R.id.menu3){
                     actionBar.setTitle("릴스");
                     getSupportFragmentManager().beginTransaction().replace(R.id.container,new LilFragment()).commit();
-
                 }else if(item.getItemId() == R.id.menu4){
                     actionBar.setTitle("Shop");
                     getSupportFragmentManager().beginTransaction().replace(R.id.container,new ShopFragment()).commit();

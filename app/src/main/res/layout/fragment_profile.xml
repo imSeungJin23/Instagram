@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -98,14 +99,14 @@
                         android:layout_width="70dp"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="82"
+                        android:text="6381"
                         android:textColor="#0C0C0C" />
 
                     <TextView
                         android:layout_width="70dp"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="85"
+                        android:text="1042"
                         android:textColor="#0C0C0C" />
                 </LinearLayout>
 
@@ -178,5 +179,71 @@
 
     </LinearLayout>
 
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="#000"
+        app:tabIndicatorHeight="2dp"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="#000000"
+        app:tabTextColor="#767778" />
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/tabs"
+        android:id="@+id/contents">
+
+        <ImageView
+            android:id="@+id/camera"
+            android:visibility="visible"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_outline_camera_alt_24"/>
+
+        <TextView
+            android:id="@+id/camerat"
+            android:visibility="visible"
+            android:layout_width="143dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:text="게시물 없음"
+            android:textColor="#123"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/meAl"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_outline_assignment_ind_24"/>
+
+        <TextView
+            android:id="@+id/meAlt"
+            android:visibility="invisible"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:text="내가 태그된 사진과 동영상"
+            android:textColor="#123"
+            android:textStyle="bold"
+             />
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/meAltt"
+            android:layout_marginTop="120dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="사람들이 회원님을 사진 및 동영상에 태그하면 태그된 사진 및  동영상이 여기에 표시됩니다." />
+    </FrameLayout>
 </LinearLayout>

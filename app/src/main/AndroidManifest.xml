@@ -12,6 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MiddleTest"
         android:usesCleartextTraffic="true">
+        <activity
+            android:name=".LilActivity"
+            android:exported="true" />
+        <activity
+            android:name=".chatIn"
+            android:exported="true" />
+
         <meta-data
             android:name="com.google.android.actions"
             android:resource="@xml/actions" />

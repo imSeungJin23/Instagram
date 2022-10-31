@@ -4,15 +4,17 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.ImageView;
 
+import com.bumptech.glide.Glide;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
     ActionBar actionBar;
-    ImageView img1;
+    ImageView img;
     BottomNavigationView btm_nav;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +36,8 @@ public class MainActivity extends AppCompatActivity {
                     getSupportFragmentManager().beginTransaction().replace(R.id.container,new SearchFragment()).commit();
                 }else if(item.getItemId() == R.id.menu3){
                     actionBar.setTitle("릴스");
-                    getSupportFragmentManager().beginTransaction().replace(R.id.container,new LilFragment()).commit();
+                    Intent intent = new Intent(MainActivity.this, LilActivity.class);
+                    startActivity(intent);
                 }else if(item.getItemId() == R.id.menu4){
                     actionBar.setTitle("Shop");
                     getSupportFragmentManager().beginTransaction().replace(R.id.container,new ShopFragment()).commit();

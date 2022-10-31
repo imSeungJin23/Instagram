@@ -67,6 +67,7 @@
     </LinearLayout>
 
     <EditText
+        android:id="@+id/storyIn_msg"
         android:layout_width="259dp"
         android:layout_height="40dp"
         android:layout_alignParentEnd="true"
@@ -76,11 +77,14 @@
         android:layout_marginBottom="55dp"
         android:background="@drawable/border"
         android:gravity="center_vertical"
-        android:text="메세지 보내기"
-        android:textColor="@color/white"
+        android:hint="메세지 보내기"
+        android:inputType="textPersonName"
+        android:textColor="#F7FBFF"
+        android:textColorHint="@color/white"
         android:textSize="12dp" />
 
     <ImageView
+        android:id="@+id/storyIn_fav"
         android:layout_width="38dp"
         android:layout_height="43dp"
         android:layout_alignParentEnd="true"

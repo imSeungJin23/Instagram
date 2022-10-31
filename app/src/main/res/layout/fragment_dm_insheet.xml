@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_margin="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".DmInsheetFragment"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/dm_in_msg"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="메세지 작성">
+    </EditText>
+    <View
+        android:background="#B9BFC5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+    </View>
+
+    <Button
+        android:backgroundTint="#123"
+        android:id="@+id/dm_in_btn"
+        android:text="보내기"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </Button>
+</LinearLayout>

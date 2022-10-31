@@ -22,10 +22,11 @@
         android:orientation="horizontal">
 
         <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_gravity="left"
             android:id="@+id/pro_img"
             android:layout_width="75dp"
             android:layout_height="match_parent"
-            android:src="@drawable/pro"/>
+            android:src="@drawable/cat"/>
 
         <LinearLayout
             android:layout_width="249dp"
@@ -43,11 +44,11 @@
 
             <TextView
                 android:id="@+id/location"
-                android:textColor="#AFB3B3"
-                android:textSize="14dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="고양이집" />
+                android:text="고양이집"
+                android:textColor="#AFB3B3"
+                android:textSize="14dp" />
 
         </LinearLayout>
 
@@ -75,7 +76,7 @@
             android:scaleType="fitXY"
             android:layout_width="match_parent"
             android:layout_height="300dp"
-            android:src="@drawable/pro" />
+            android:src="@drawable/cat" />
     </LinearLayout>
     <RelativeLayout
         android:layout_margin="10dp"
@@ -107,6 +108,7 @@
 
 
             <ImageView
+                android:id="@+id/insta_dm"
                 android:layout_gravity="center_vertical"
                 android:layout_width="26dp"
                 android:layout_height="24dp"
@@ -172,6 +174,7 @@
                 android:text="츄르내놔" />
         </LinearLayout>
         <TextView
+            android:id="@+id/insta_edit"
             android:text="댓글 모두 보기"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
@@ -206,7 +209,7 @@
                 android:id="@+id/repl_my_img"
                 android:layout_width="30dp"
                 android:layout_height="50dp"
-                android:src="@drawable/pro"
+                android:src="@drawable/cat"
                 android:layout_marginRight="10dp"
                 />
 

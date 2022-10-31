@@ -1,7 +1,9 @@
 package com.example.middletest;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,13 +21,13 @@ public class instaAdapter extends RecyclerView.Adapter<instaAdapter.ViewHolder> 
     LayoutInflater inflater;
     Context context;
     ArrayList<InstaDTO> list2;
+    MainActivity activity ;
 
-
-
-    public instaAdapter(LayoutInflater inflater, Context context, ArrayList<InstaDTO> list2) {
+    public instaAdapter(LayoutInflater inflater, Context context, ArrayList<InstaDTO> list2, Activity activity) {
         this.inflater = inflater;
         this.context = context;
         this.list2 = list2;
+        this.activity = (MainActivity) activity;
     }
 
 
@@ -58,9 +60,21 @@ public class instaAdapter extends RecyclerView.Adapter<instaAdapter.ViewHolder> 
             }
         });
         h.chat_icon.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
-                h.edit_Text.requestFocus();
+                Intent intent = new Intent(context,chatIn.class);
+                context.startActivity(intent);
+
+            }
+        });
+        h.insta_edit.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context,chatIn.class);
+                context.startActivity(intent);
+
             }
         });
         h.insta_heart.setOnClickListener(new View.OnClickListener() {
@@ -81,6 +95,17 @@ public class instaAdapter extends RecyclerView.Adapter<instaAdapter.ViewHolder> 
 
             }
         });
+
+        h.insta_dm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DmsheetFragment fragment = new DmsheetFragment();
+                fragment.show(activity.getSupportFragmentManager(),fragment.getTag());
+
+            }
+        });
+
+
     }
 
     @Override
@@ -89,8 +114,9 @@ public class instaAdapter extends RecyclerView.Adapter<instaAdapter.ViewHolder> 
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
-        ImageView pro_img, content_img , repl_my_img, chat_icon, insta_heart;
-        TextView content_text, location, nick_name, nick_name2, insertText,edit_Text,repl_id,favorNum ;
+        ImageView pro_img, content_img , repl_my_img, chat_icon, insta_heart,insta_dm;
+        TextView content_text, location, nick_name, nick_name2, insertText,edit_Text,repl_id,favorNum,insta_edit ;
+        EditText chat_edit;
         Button btn_rpl;
 
         public ViewHolder(@NonNull View v) {
@@ -109,6 +135,9 @@ public class instaAdapter extends RecyclerView.Adapter<instaAdapter.ViewHolder> 
             nick_name2 = v.findViewById(R.id.nick_name2);
             chat_icon = v.findViewById(R.id.chat_icon);
             insta_heart = v.findViewById(R.id.insta_heart);
+            insta_dm = v.findViewById(R.id.insta_dm);
+            chat_edit = v.findViewById(R.id.chat_edit);
+            insta_edit = v.findViewById(R.id.insta_edit);
 
 
 

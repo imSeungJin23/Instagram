@@ -49,9 +49,6 @@ public class storyAdapter extends RecyclerView.Adapter<storyAdapter.ViewHolder> 
             }
         });
 
-
-
-
     }
 
     @Override

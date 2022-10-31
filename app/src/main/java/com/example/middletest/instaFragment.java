@@ -54,7 +54,7 @@ public class instaFragment extends Fragment {
 
 
 
-        instaAdapter iadapter = new instaAdapter(inflater,context,list2);
+        instaAdapter iadapter = new instaAdapter(inflater,context,list2,getActivity());
 
         rec_view = v.findViewById(R.id.rec_view);
 

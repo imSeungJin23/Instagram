@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Study_Android/workspace/MiddleTest/app/src/main/res/drawable/border.xml" value="0.384375" />
+        <entry key="..\:/Study_Android/workspace/MiddleTest/app/src/main/res/drawable/border2.xml" value="2.460714285714286" />
         <entry key="..\:/Study_Android/workspace/MiddleTest/app/src/main/res/drawable/ic_baseline_bookmark_border_24.xml" value="0.3236842105263158" />
         <entry key="..\:/Study_Android/workspace/MiddleTest/app/src/main/res/drawable/ic_baseline_chat_bubble_outline_24.xml" value="0.3236842105263158" />
         <entry key="..\:/Study_Android/workspace/MiddleTest/app/src/main/res/drawable/ic_baseline_favorite_border_24.xml" value="0.3236842105263158" />
@@ -20,23 +21,33 @@
         <entry key="..\:/Study_Android/workspace/MiddleTest/app/src/main/res/drawable/ic_outline_person_outline_24.xml" value="0.18611111111111112" />
         <entry key="..\:/Study_Android/workspace/MiddleTest/app/src/main/res/drawable/ic_outline_search_24.xml" value="0.18611111111111112" />
         <entry key="..\:/Study_Android/workspace/MiddleTest/app/src/main/res/drawable/radius.xml" value="0.384375" />
+        <entry key="..\:/Study_Android/workspace/MiddleTest/app/src/main/res/layout/activity_chat_in.xml" value="0.31008771929824563" />
         <entry key="..\:/Study_Android/workspace/MiddleTest/app/src/main/res/layout/activity_insta_item.xml" value="0.36822916666666666" />
+        <entry key="..\:/Study_Android/workspace/MiddleTest/app/src/main/res/layout/activity_lil.xml" value="0.31008771929824563" />
         <entry key="..\:/Study_Android/workspace/MiddleTest/app/src/main/res/layout/activity_main.xml" value="0.36822916666666666" />
         <entry key="..\:/Study_Android/workspace/MiddleTest/app/src/main/res/layout/activity_splash.xml" value="0.36822916666666666" />
         <entry key="..\:/Study_Android/workspace/MiddleTest/app/src/main/res/layout/activity_story_in.xml" value="0.31008771929824563" />
         <entry key="..\:/Study_Android/workspace/MiddleTest/app/src/main/res/layout/border.xml" value="0.2956140350877193" />
+        <entry key="..\:/Study_Android/workspace/MiddleTest/app/src/main/res/layout/chatin_item.xml" value="0.31008771929824563" />
+        <entry key="..\:/Study_Android/workspace/MiddleTest/app/src/main/res/layout/dm_item.xml" value="0.31008771929824563" />
         <entry key="..\:/Study_Android/workspace/MiddleTest/app/src/main/res/layout/fragment_bottomsheet.xml" value="0.25" />
+        <entry key="..\:/Study_Android/workspace/MiddleTest/app/src/main/res/layout/fragment_chat.xml" value="0.25" />
+        <entry key="..\:/Study_Android/workspace/MiddleTest/app/src/main/res/layout/fragment_dm_insheet.xml" value="0.31008771929824563" />
+        <entry key="..\:/Study_Android/workspace/MiddleTest/app/src/main/res/layout/fragment_dmsheet.xml" value="0.29473684210526313" />
         <entry key="..\:/Study_Android/workspace/MiddleTest/app/src/main/res/layout/fragment_insta.xml" value="0.36822916666666666" />
         <entry key="..\:/Study_Android/workspace/MiddleTest/app/src/main/res/layout/fragment_item.xml" value="0.36822916666666666" />
         <entry key="..\:/Study_Android/workspace/MiddleTest/app/src/main/res/layout/fragment_item_list.xml" value="0.35520833333333335" />
         <entry key="..\:/Study_Android/workspace/MiddleTest/app/src/main/res/layout/fragment_lil.xml" value="0.33" />
+        <entry key="..\:/Study_Android/workspace/MiddleTest/app/src/main/res/layout/fragment_lil1.xml" value="0.22" />
+        <entry key="..\:/Study_Android/workspace/MiddleTest/app/src/main/res/layout/fragment_lil2.xml" value="0.31008771929824563" />
+        <entry key="..\:/Study_Android/workspace/MiddleTest/app/src/main/res/layout/fragment_lil3.xml" value="0.31008771929824563" />
         <entry key="..\:/Study_Android/workspace/MiddleTest/app/src/main/res/layout/fragment_profile.xml" value="0.36822916666666666" />
         <entry key="..\:/Study_Android/workspace/MiddleTest/app/src/main/res/layout/fragment_s_hop.xml" value="0.31008771929824563" />
         <entry key="..\:/Study_Android/workspace/MiddleTest/app/src/main/res/layout/fragment_search.xml" value="0.36822916666666666" />
         <entry key="..\:/Study_Android/workspace/MiddleTest/app/src/main/res/layout/fragment_story.xml" value="0.36822916666666666" />
         <entry key="..\:/Study_Android/workspace/MiddleTest/app/src/main/res/layout/gif.xml" value="0.31008771929824563" />
         <entry key="..\:/Study_Android/workspace/MiddleTest/app/src/main/res/layout/layout.xml" value="0.29912280701754385" />
-        <entry key="..\:/Study_Android/workspace/MiddleTest/app/src/main/res/layout/lil_item.xml" value="0.5" />
+        <entry key="..\:/Study_Android/workspace/MiddleTest/app/src/main/res/layout/lil_item.xml" value="0.33" />
         <entry key="..\:/Study_Android/workspace/MiddleTest/app/src/main/res/layout/lil_menu_item.xml" value="0.31008771929824563" />
         <entry key="..\:/Study_Android/workspace/MiddleTest/app/src/main/res/layout/profile_item.xml" value="0.31008771929824563" />
         <entry key="..\:/Study_Android/workspace/MiddleTest/app/src/main/res/layout/profile_item2.xml" value="0.31008771929824563" />

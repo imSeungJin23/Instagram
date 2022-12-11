@@ -15,8 +15,7 @@
   - `Android Studio` 
   
   ## 주요 기능
-  -Recycler View 
-  -Retro fit
-  -View Pager
-  
-  
+  -Recycler View <br>
+  -Retro fit<br>
+  -View Pager<br>
+

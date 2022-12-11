@@ -17,7 +17,7 @@
   ## 주요 기능
   -Recycler View <br>
   -Retro fit<br>
-  -View Pager<br>
+  -View Pager를 이용한 화면 전환<br>
 
 ![insta](https://user-images.githubusercontent.com/109931390/206896348-6c861f4c-1de4-41bb-90e1-6c7d44b183dd.png)<br>
 ![profile](https://user-images.githubusercontent.com/109931390/206896351-29c1eff7-2ce6-4918-8f94-a9b1b3b35033.png)<br>
